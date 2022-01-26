@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1> 자바스크립트 예제</h1>
+	
+</body>
+<script type="text/javascript">
+
+	// 이름 있는 함수 (기명함수, 선언적함수)
+	
+	testA();
+	
+	function testA(){
+		console.log("testA()실행");
+	}
+	
+	
+	
+	
+	// 이름 없는 함수 (익명함수)
+	
+	var testB = function() {
+		console.log("익명함수 실행");
+	}
+	testB();
+	/* 뒤에 있으면 오류
+	var testB = function() {
+		console.log("익명함수 실행");
+	}	
+	*/
+	
+	console.log(typeof testB);
+	
+</script>
+</html>

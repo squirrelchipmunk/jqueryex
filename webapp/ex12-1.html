@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1> 자바스크립트 예제</h1>
+</body>
+
+<script>
+	var	name = "global"; // 전역변수를선언
+	function checkscope(){
+		name = "local"; // 전역변수를변경
+		name2 = "로컬";  // 암묵적으로새전역변수가선언됨
+	}
+	checkscope();
+	console.log(name); // 출력결과: "local"
+	console.log(name2); // 출력결과: "로컬"
+</script>
+</html>
