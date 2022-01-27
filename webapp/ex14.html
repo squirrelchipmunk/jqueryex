@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+</head>
+<body>
+   <h1>자바스크립트 예제</h1>
+      
+<script type="text/javascript">
+
+	var guestbookVoEmpty = {};
+	var guestbookVo = { // 할당 특수문자 :
+	   no:1, 
+	   name:"홍길동", 
+	   password:"1234", 
+	   content:"구경왔습니다",
+	   showInfo: function() {return 3+5}
+	};  
+	
+	console.log("빈 객체도 쓸 수 있다");
+	console.log(guestbookVoEmpty);
+	console.log("객체 안에 담긴 모든 것");
+	console.log(guestbookVo);
+	console.log("객체안에 하나만 꺼내올 수 있다");
+	console.log(guestbookVo.content);
+	
+	console.log("객체안의 실행식");
+	console.log(guestbookVo.showInfo); // return 3+5 ->  그대로 보여줌
+	console.log(guestbookVo.showInfo()); // 식 실행
+	
+	guestbookVo.regDate = "2022-01-27"; // regDate 추가
+	console.log(guestbookVo); 
+	
+	var personVo ={};
+	personVo.no = 1;
+	personVo.name = "유재석";
+	personVo.hp = "010-4444-2222";
+	personVo.company = "02-3333-2222";
+	
+	console.log("personVo 출력");
+	console.log(personVo);
+   
+   
+</script>
+
+</body>
+</html>

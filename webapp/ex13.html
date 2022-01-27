@@ -9,16 +9,85 @@
 </body>
 
 <script type="text/javascript">
-	var array = [273, 32, 103, 57, 52];
-	console.log(array);
+   console.log("**배열**");
+   var array = [5, 4, 3, 2, 1];
+   
+   console.log(array[0]);
+   console.log(array[1]);
+   console.log(array[2]);
+   console.log(array[3]);
+   console.log(array[4]);
+   console.log(array[5]);
+   
+   for (var i=0; i<array.length; i++) {
+      console.log(array[i]);
+   }
+   
+</script>
+<br>
+<h3>배열2</h3>
+<script type="text/javascript">
+	console.log("**배열2**");
+	var array=[];
+	
+	array[0]=5;
+	array[1]=4;
+	array[2]=3;
+	array[3]=2;
+	array[4]=1;
+	
+	for (var i=0; i<array.length; i++) {
+	   console.log(array[i]);
+	}
 </script>
 
+<br>
 <script type="text/javascript">
-	var array = [];
-	array[0] = 1;
-	array[1] = 2.5;
-	array[2] = "안녕";
-	array[4] = "hello!!";
-	console.log(array);
+	console.log("**array2**");
+	var array2=[];
+	
+	array[0]=1;
+	array[1]=2.5;
+	array[2]='a';
+	array[3]='안녕 hello!!';
+	array[4]='let us go';
+	
+	for (var i=0; i<array2.length; i++) {
+	   console.log(array[i]);
+	}
 </script>
+
+<br>
+
+<script type="text/javascript">
+   console.log("**배열3**");
+   var array = [532, "Hello", true, sum(5,3), [111, 222], function(){return 3+4;} ];
+   
+   console.log(array[0]); // 532
+   console.log(array[1]); // Hello
+   console.log(array[2]); // true
+   console.log(array[3]); // 8
+   console.log(array[4] [0]); // 111
+   console.log(array[4] [1]); // 222
+   console.log(array[5]()); /// 7 () 가 있어야 숫자 출력 
+   
+   function sum (a, b) {
+      return a+b;
+   }
+   
+   console.log("**배열 push pop 기능 - 좀더 공부해볼것**");
+   var intArray = [];
+   intArray.push(3);
+   console.log(intArray);
+   
+   intArray.push(469);
+   console.log(intArray);
+   
+   intArray.pop();
+   console.log(intArray);
+   
+</script>
+
+
+</body>
 </html>

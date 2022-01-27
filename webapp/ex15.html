@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+</head>
+<body>
+   <h1>자바스크립트 예제</h1>
+   
+<script type="text/javascript">
+   	var personList = [];
+  
+   	var personVo1 = {
+		name: "홍길동",
+		hp: "010-2222-3333",
+		company: "02-3332-2223"
+	};
+
+   var personVo2 = {};
+   personVo2.name = "유재석";
+   personVo2.hp = "010-3333-3333";
+   personVo2.company = "02-3333-3333";
+ 
+   var personVo3 = {
+		name:"이효리",
+		hp: "010-4444-4444"
+   }
+   personVo3.company = "02-4444-4444";
+   
+   personList.push(personVo1);
+   personList.push(personVo2);
+   personList.push(personVo3);
+   
+   for(var i=0; i<personList.length;i++){
+	   console.log(personList[i].name);
+   }
+   
+</script>
+
+</body>
+</html>
